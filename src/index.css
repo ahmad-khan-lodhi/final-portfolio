@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0D1B2A;
+  color: #E0E1DD;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glowing background ambient blobs using Twilight Sky tones */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-blob-1 {
+  width: 550px;
+  height: 550px;
+  top: -100px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(119, 141, 169, 0.22) 0%, rgba(65, 90, 119, 0.12) 60%, transparent 100%);
+}
+
+.glow-blob-2 {
+  width: 650px;
+  height: 650px;
+  top: 450px;
+  right: -150px;
+  background: radial-gradient(circle, rgba(65, 90, 119, 0.22) 0%, rgba(27, 38, 59, 0.12) 60%, transparent 100%);
+}
