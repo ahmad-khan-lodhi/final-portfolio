@@ -18,6 +18,22 @@ const PROJECTS = [
     ],
   },
   {
+    id: 'medical-inventory',
+    title: 'Medical Inventory & Stock Management System',
+    category: 'mobile',
+    icon: FaRobot,
+    tags: ['Flutter', 'Dart', 'Mobile App', 'Local Database'],
+    description:
+      'A mobile application developed for a medical clinic to efficiently manage medicine inventory, stock, billing, and reports. The application works offline using local database storage.',
+    highlights: [
+      'Medicine search, inventory management, and stock tracking.',
+      'Add medicines to cart, calculate totals, and create editable bills.',
+      'Stock reports with sorting and filtering options.',
+      'Local database storage for offline use.',
+      'Database backup and sharing functionality.',
+    ],
+  },
+  {
     id: 'ai-scheduler',
     title: 'AI-Based Task Scheduler',
     category: 'ai',
@@ -78,7 +94,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 relative z-10 bg-[#0D1B2A]/60 border-t border-[#415A77]/20">
       <div className="container mx-auto px-6 max-w-7xl">
-        
+
         {/* Section Header */}
         <motion.div
           className="text-center max-w-3xl mx-auto mb-12"
@@ -101,11 +117,10 @@ const ProjectsSection = () => {
             <button
               key={btn.value}
               onClick={() => setActiveFilter(btn.value)}
-              className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                activeFilter === btn.value
+              className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${activeFilter === btn.value
                   ? 'bg-gradient-to-r from-[#415A77] to-[#778DA9] text-[#E0E1DD] shadow-lg shadow-[#1B263B]'
                   : 'bg-[#1B263B]/80 border border-[#415A77]/40 text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/30'
-              }`}
+                }`}
             >
               {btn.name}
             </button>
