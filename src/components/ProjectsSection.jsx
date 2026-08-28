@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGasPump, FaRobot, FaCoffee, FaUtensils, FaFigma } from 'react-icons/fa';
+import { FaGasPump, FaRobot, FaCoffee, FaUtensils, FaFigma, FaClinicMedical } from 'react-icons/fa';
 
 const PROJECTS = [
   {
@@ -21,7 +21,7 @@ const PROJECTS = [
     id: 'medical-inventory',
     title: 'Medical Inventory & Stock Management System',
     category: 'mobile',
-    icon: FaRobot,
+    icon: FaClinicMedical,
     tags: ['Flutter', 'Dart', 'Mobile App', 'Local Database'],
     description:
       'A mobile application developed for a medical clinic to efficiently manage medicine inventory, stock, billing, and reports. The application works offline using local database storage.',
@@ -118,8 +118,8 @@ const ProjectsSection = () => {
               key={btn.value}
               onClick={() => setActiveFilter(btn.value)}
               className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${activeFilter === btn.value
-                  ? 'bg-gradient-to-r from-[#415A77] to-[#778DA9] text-[#E0E1DD] shadow-lg shadow-[#1B263B]'
-                  : 'bg-[#1B263B]/80 border border-[#415A77]/40 text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/30'
+                ? 'bg-gradient-to-r from-[#415A77] to-[#778DA9] text-[#E0E1DD] shadow-lg shadow-[#1B263B]'
+                : 'bg-[#1B263B]/80 border border-[#415A77]/40 text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/30'
                 }`}
             >
               {btn.name}
