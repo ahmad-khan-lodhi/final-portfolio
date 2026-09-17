@@ -21,7 +21,7 @@ const AboutSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* My Story & Objective */}
           <motion.div
             className="lg:col-span-6 bg-[#1B263B]/60 border border-[#415A77]/30 rounded-2xl p-8 backdrop-blur-md shadow-xl"
@@ -94,6 +94,19 @@ const AboutSection = () => {
                 <p className="text-sm font-medium text-[#778DA9]">Vital Petroleum, Lahore</p>
                 <p className="text-[#E0E1DD]/80 text-sm mt-2 leading-relaxed">
                   Supervised daily management, handled client correspondence, audited inventory levels, and sharpened team coordination capabilities.
+                </p>
+              </div>
+
+              {/* Timeline Item 3 */}
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-[#415A77] ring-4 ring-[#0D1B2A]" />
+                <span className="text-xs font-semibold text-[#778DA9] uppercase tracking-wider">
+                  Jul 2026 - Present
+                </span>
+                <h4 className="text-lg font-bold text-[#E0E1DD] mt-1">Software Engineer Intern</h4>
+                <p className="text-sm font-medium text-[#778DA9]">Star Automation, Lahore</p>
+                <p className="text-[#E0E1DD]/80 text-sm mt-2 leading-relaxed">
+                  Working on real-world web applications using PHP and Laravel. I assist with developing, debugging, and maintaining application features, analyze existing workflows, and work with the software team to understand requirements and deliver reliable solutions.
                 </p>
               </div>
             </div>
